@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>seiflek@zoho.com</email>
+		<name>Seif Lekbir</name>
+	</maintainer>
+	<use>
+		<flag name="doc">Add extra documentation</flag>
+		<flag name="gtk">Add support for x11-libs/gtk+</flag>
+		<flag name="kde">Add support for KDE</flag>
+		<flag name="introspection">Add support for GObject based introspection</flag>
+		<flag name="policykit">Enable PolicyKit authentication support</flag>
+		<flag name="seccomp">Enable seccomp (secure computing mode)</flag>
+		<flag name="xauth">Add xauth support</flag>
+	</use>
+</pkgmetadata>
