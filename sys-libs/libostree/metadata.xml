@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>seiflek@zoho.com</email>
+		<name>Seif Lekbir</name>
+	</maintainer>
+	<use>
+		<flag name="doc">Add extra documentation</flag>
+		<flag name="man">Build and install man pages</flag>
+		<flag name="selinux">Enable selinux support</flag>
+		<flag name="curl">Enable curl support</flag>
+		<flag name="soup">Add support for client-side URL transfer library</flag>
+		<flag name="systemd">Enable systemd support</flag>
+		<flag name="avahi">Add avahi/Zeroconf support</flag>
+		<flag name="openssl">Add openssl support</flag>
+		<flag name="gnutls">Add gnutls support</flag>
+		<flag name="http2">Enabled HTTP/2.0 support</flag>
+		<flag name="introspection">Add support for GObject based introspection</flag>
+		<flag name="libmount">Link with libmount</flag>
+	</use>
+</pkgmetadata>
