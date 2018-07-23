@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>seiflek@zoho.com</email>
+		<name>Seif Lekbir</name>
+	</maintainer>
+	<use>
+		<flag name="man">Build and install man pages</flag>
+		<flag name="doc">Add extra documentation</flag>
+		<flag name="gstreamer">Enable gstreamer backend</flag>
+		<flag name="jack">Add support for the JACK Audio Connection Kit</flag>
+		<flag name="valgrind">Compile against dev-util/valgrind headers</flag>
+		<flag name="systemd">Enable systemd support</flag>
+	</use>
+</pkgmetadata>
