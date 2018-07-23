@@ -12,7 +12,7 @@ SRC_URI="https://github.com/${PN}/${PN}/releases/download/${PV}/${P}.tar.xz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc gtk kde +introspection +policykit +seccomp +xauth"
+IUSE="doc gtk kde +introspection +policykit +seccomp +xauth +system-bubblewrap"
 
 CDEPEND="
 	>=sys-libs/libostree-2018.6
@@ -22,10 +22,12 @@ CDEPEND="
 	>=dev-libs/libxml2-2.4
 	sys-apps/dbus
 	>=dev-libs/json-glib-1.0
-	>=sys-apps/bubblewrap-0.2.1
 	sys-libs/libcap
 	>=app-arch/libarchive-2.8.0
 	>=app-crypt/gpgme-1.1.8
+	system-bubblewrap? (
+		>=sys-apps/bubblewrap-0.2.1
+	)
 	xauth? (
 		x11-apps/xauth
 		x11-libs/libXau
@@ -74,8 +76,8 @@ src_configure() {
 		--libexecdir="${EPREFIX}/usr/$(get_libdir)/libexec"
 		--enable-sandboxed-triggers
 		--with-priv-mode=setuid
-		--with-system-bubblewrap
 		--localstatedir="${EPREFIX}/var"
+		$(use_with system-bubblewrap)
 		$(use_enable xauth)
 		$(use_enable seccomp)
 		$(use_enable doc documentation)

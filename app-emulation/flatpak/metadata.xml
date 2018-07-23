@@ -13,5 +13,6 @@
 		<flag name="policykit">Enable PolicyKit authentication support</flag>
 		<flag name="seccomp">Enable seccomp (secure computing mode)</flag>
 		<flag name="xauth">Add xauth support</flag>
+		<flag name="system-bubblewrap">Use sys-apps/bubblewrap instead of the bundled one</flag>
 	</use>
 </pkgmetadata>
