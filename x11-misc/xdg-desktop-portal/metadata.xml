@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>seiflek@zoho.com</email>
+		<name>Seif Lekbir</name>
+	</maintainer>
+	<use>
+		<flag name="doc">Add extra documentation</flag>
+		<flag name="systemd">Enable systemd support</flag>
+		<flag name="pipewire">Enable pipewire support</flag>
+	</use>
+</pkgmetadata>
