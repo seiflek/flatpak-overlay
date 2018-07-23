@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>seiflek@zoho.com</email>
+		<name>Seif Lekbir</name>
+	</maintainer>
+	<use>
+		<flag name="X">Add support for X11</flag>
+		<flag name="wayland">Enable wayland backend</flag>
+		<flag name="systemd">Enable systemd support</flag>
+	</use>
+</pkgmetadata>
